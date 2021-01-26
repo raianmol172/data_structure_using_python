@@ -3,7 +3,8 @@ class Node:
         self.data = data
         self.next = None
 
-class Linkedlist:
+
+class LinkedList:
     def __init__(self):
         self.head = None
 
@@ -40,7 +41,7 @@ class Linkedlist:
 
 
 if __name__ == '__main__':
-    list1 = Linkedlist()
+    list1 = LinkedList()
     list1.head = Node("mon")
     l2 = Node("tue")
     l3 = Node("wed")
