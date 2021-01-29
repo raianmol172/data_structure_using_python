@@ -39,7 +39,7 @@ class LinkedList:
         curr = self.head
         dup_value = dict()
         while curr:
-            if curr.data in dup_value:     
+            if curr.data in dup_value:
                 prev.next = curr.next
                 curr = None
             else:
