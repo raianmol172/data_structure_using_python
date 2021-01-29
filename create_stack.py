@@ -17,13 +17,3 @@ class Stack:
 
     def getStack(self):
         return self.items
-
-
-mystack = Stack()
-mystack.push(10)
-mystack.push('mon')
-mystack.push(20)
-mystack.pop()
-print(mystack.getStack())
-print(mystack.peek())
-print(mystack.is_empty())
