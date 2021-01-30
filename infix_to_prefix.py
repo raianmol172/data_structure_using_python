@@ -26,7 +26,7 @@ class Stack:
             return self.items[self.size]
 
     def isOperand(self, i):
-        if i in "ABCDEFGHIJKLMNOPQRSTUVWXYZ" or i in "0123456789":
+        if i.isalpha() or i in "0123456789":
             return True
         else:
             return False
