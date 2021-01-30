@@ -26,7 +26,7 @@ class Stack:
             return self.items[self.size]
 
     def isOperand(self, i):
-        if i in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+        if i in "ABCDEFGHIJKLMNOPQRSTUVWXYZ" or i in "0123456789":
             return True
         else:
             return False
@@ -67,7 +67,7 @@ class Stack:
 
 
 s = Stack()
-expr = "(A+B)*C"
+expr = "(1+2)*3"
 result = s.infix_to_postfix(expr)
 if result != False:
     print("the postfix of :", expr,  "is", result)
