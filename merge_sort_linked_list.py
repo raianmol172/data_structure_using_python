@@ -53,13 +53,13 @@ class LinkedList:
 
     def getMiddle(self, head):
 
-        if head == None:
+        if head is None:
             return head
 
         slow = head
         fast = head
 
-        while slow.next != None and slow.next.next != None:
+        while slow.next is not None and slow.next.next is not None:
 
             slow = slow.next
             fast = fast.next.next
@@ -70,7 +70,7 @@ class LinkedList:
     def printList(self):
         temp = self.head
         while temp:
-            print(temp.data, end= " ")
+            print(temp.data, end=" ")
             temp = temp.next
         print(' \n ')
 
