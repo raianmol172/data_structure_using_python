@@ -59,7 +59,7 @@ class LinkedList:
         slow = head
         fast = head
 
-        while slow.next is not None and slow.next.next is not None:
+        while slow.next is not None and fast.next.next is not None:
 
             slow = slow.next
             fast = fast.next.next
