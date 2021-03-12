@@ -10,10 +10,10 @@ def binarySearch(my_array, target):
             return middle
 
         elif target < middle_element:
-            right = middle + 1
+            right = middle - 1
 
         else:
-            left = middle - 1
+            left = middle + 1
     return -1
 
 
