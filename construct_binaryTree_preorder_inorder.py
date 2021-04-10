@@ -1,3 +1,7 @@
+# this is not an effective approach as it takes O(n^2) as it first takes O(n)
+# in pop first element from list and the searching for that element
+# and then slicing cause it O(n) 
+
 class Node:
     def __init__(self, data):
         self.data = data
