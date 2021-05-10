@@ -1,3 +1,6 @@
+from collections import deque
+
+
 class Node:
     def __init__(self, data):
         self.data = data
@@ -9,16 +12,17 @@ def reverseLevelOrder(root):
     if root is None:
         return None
     else:
-        q = [root]  # queue using array
-        s = []      # stack using array
+        q = deque()  # queue using array
+        s = deque()  # stack using array
+        q.append(root)
 
         while len(q):
-            temp = q.pop(0)
+            temp = q.popleft()
             s.append(temp)
-            if temp.left:
-                q.append(temp.left)
             if temp.right:
                 q.append(temp.right)
+            if temp.left:
+                q.append(temp.left)
 
         while len(s):
             temp = s.pop()
