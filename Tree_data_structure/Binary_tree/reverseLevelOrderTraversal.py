@@ -13,7 +13,7 @@ def reverseLevelOrder(root):
         return None
     else:
         q = deque()
-        s = deque()  
+        s = deque()
         q.append(root)
 
         while len(q):
