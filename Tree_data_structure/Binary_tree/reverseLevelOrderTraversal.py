@@ -12,8 +12,8 @@ def reverseLevelOrder(root):
     if root is None:
         return None
     else:
-        q = deque()  # queue using array
-        s = deque()  # stack using array
+        q = deque()
+        s = deque()  
         q.append(root)
 
         while len(q):
