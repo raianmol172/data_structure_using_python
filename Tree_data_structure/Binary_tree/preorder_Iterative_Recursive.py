@@ -11,16 +11,13 @@ class Node:
 def preorderIterative(root):
     stack = deque()
     stack.append(root)
-    curr = root
-
     while stack:
-        if curr:
-            print(curr.data, end=' ')
-            if curr.right:
-                stack.append(curr.right)
-            curr = curr.left
-        else:
-            curr = stack.pop()
+        temp = stack.pop()
+        print(temp.data, end=' ')
+        if temp.right:
+            stack.append(temp.right)
+        if temp.left:
+            stack.append(temp.left)
 
 
 def preorderRecursive(root):
@@ -35,6 +32,10 @@ def preorderRecursive(root):
 tree = Node(1)
 tree.left = Node(2)
 tree.right = Node(3)
+tree.left.left = Node(4)
+tree.left.right = Node(5)
+tree.right.left = Node(6)
+tree.right.right = Node(7)
 print('preorder iterative: ')
 preorderIterative(tree)
 print('\npreorder recursive: ')
