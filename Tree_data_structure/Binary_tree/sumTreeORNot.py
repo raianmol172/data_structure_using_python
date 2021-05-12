@@ -25,15 +25,15 @@ def isSumTree(root):
 
 
 
-root = Node(26)
-root.left = Node(10)
-root.right = Node(3)
-root.right.right = Node(3)
-root.left.left = Node(6)
-root.left.right = Node(4)
+tree = Node(26)
+tree.left = Node(10)
+tree.right = Node(3)
+tree.right.right = Node(3)
+tree.left.left = Node(6)
+tree.left.right = Node(4)
 
 
-if isSumTree(root) != -sys.maxsize:
+if isSumTree(tree) != -sys.maxsize:
 	print("Binary tree is a sum tree")
 else:
 	print("Binary tree is not a sum tree")
