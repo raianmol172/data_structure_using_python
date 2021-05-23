@@ -5,10 +5,9 @@ def selectionSort(arr):
             if arr[item] < arr[min_val]:
                 min_val = item
         arr[i], arr[min_val] = arr[min_val], arr[i]
-        print(arr)
 
 
-arr = [10, 50, 3, 60, 1]
-selectionSort(arr)
+arr1 = [10, 50, 3, 60, 1]
+selectionSort(arr1)
 
-print(arr)
+print(arr1)
